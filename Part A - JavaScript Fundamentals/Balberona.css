@@ -1,83 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e6f2ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e1bee7, #f3e5f5);
+  color: #2e2e2e;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  padding: 40px;
 }
 
 .container {
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  width: 320px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(120, 40, 160, 0.1);
+  width: 100%;
+  max-width: 420px;
 }
 
 h1 {
-  color: #0066cc;
   text-align: center;
-  margin-bottom: 20px;
+  color: #6a1b9a;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
 label {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: #333333;
+  margin-top: 18px;
+  font-weight: 500;
+  color: #4a148c;
 }
 
 input[type="number"] {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 2px solid #cccccc;
-  border-radius: 5px;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #d1c4e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 0 2px rgba(142, 36, 170, 0.1);
+  outline: none;
 }
 
 .suggested-tips {
-  margin-bottom: 15px;
+  margin-top: 20px;
+  color: #6a1b9a;
+  font-weight: 500;
 }
 
 .tip-btn {
-  margin-right: 5px;
-  background-color: #0099ff;
-  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 14px;
+  background-color: #ba68c8;
+  color: #fff;
   border: none;
-  padding: 6px 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .tip-btn:hover {
-  background-color: #007acc;
+  background-color: #ab47bc;
 }
 
-button {
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 15px;
+button#calculateBtn,
+button#clearBtn {
+  margin-top: 20px;
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
-  background-color: #28a745;
-  color: white;
+  border-radius: 8px;
   cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+#calculateBtn {
+  background-color: #7b1fa2;
+  margin-right: 4%;
+}
+
+#calculateBtn:hover {
+  background-color: #6a1b9a;
 }
 
 #clearBtn {
-  background-color: #dc3545;
+  background-color: #8e24aa;
 }
 
-button:hover {
-  opacity: 0.9;
+#clearBtn:hover {
+  background-color: #7b1fa2;
 }
 
 .result {
-  margin-top: 20px;
-  background-color: #f4f8fc;
-  padding: 15px;
-  border-radius: 5px;
-  color: #333;
-  text-align: center;
+  margin-top: 25px;
+  background-color: #f3e5f5;
+  padding: 16px;
+  border-radius: 10px;
+  color: #4a148c;
+  font-size: 16px;
 }
