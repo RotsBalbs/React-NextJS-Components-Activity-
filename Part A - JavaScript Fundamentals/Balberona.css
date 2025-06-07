@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+h1 {
+  color: #0066cc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+
+.suggested-tips {
+  margin-bottom: 15px;
+}
+
+.tip-btn {
+  margin-right: 5px;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tip-btn:hover {
+  background-color: #007acc;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+#clearBtn {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.result {
+  margin-top: 20px;
+  background-color: #f4f8fc;
+  padding: 15px;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
+}
